@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/common/theme-provider";
 import NavBar from "@/components/nav/navbar";
 import Sidebar from "@/components/common/sidebar";
 import Card from "@/components/common/followCard";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import "./globals.css";
 import Fotter from "@/components/common/fotter";
@@ -34,7 +36,8 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
               <Sidebar />
               <div className="w-full md:w-3/4">
                 <Card />
-                <div className="flex-1">{children}</div>
+                <div className="flex-1">{children}   <Analytics />
+                <SpeedInsights /></div>
               </div>
             </div>
             <Fotter />
