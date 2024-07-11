@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Manu K. Gupta", 
   description:
-    "I am an assistant professor in Management Studies at IIT Roorkee.",
+    "Faculty at IIT Roorkee.",
 };
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
